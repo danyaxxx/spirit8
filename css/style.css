@@ -22,6 +22,25 @@ ul, li {
     padding-top: 80px;
     padding-bottom: 80px;
 }
+.text-white {
+    color: #fff !important;
+}
+.title-section {
+    margin-bottom: 20px;
+}
+.title-section-lines-1, .title-section-lines-2 {
+    display: block;
+    height: 3px;
+    background: #fcac45;
+    margin: 8px auto 0 auto;
+}
+.title-section-lines-1 {
+    width: 80px;
+}
+.title-section-lines-2 {
+    width: 50px;
+    opacity: 0.6;
+}
 .header {
     width: 100%;
     background-color: #333;
@@ -150,6 +169,10 @@ ul, li {
 .about-content {
     width: 50%;
 }
+.about-content .title {
+    text-align: left !important;
+    font-family: 'Roboto Light' !important;
+}
 .subtitle {
     text-transform: uppercase;
     font-size: 18px;
@@ -162,7 +185,9 @@ ul, li {
     text-transform: uppercase;
     margin: 0;
     font-size: 30px;
-    font-family: 'Roboto Light';
+    font-family: 'Roboto Thin';
+    text-align: center;
+    padding-bottom: 16px;
 }
 .title b {
     font-family: 'Roboto Bold';
@@ -207,6 +232,71 @@ ul, li {
 .about_button:hover {
     background: #636363;
     color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team {
+    background: #333;
+}
+.team-slider-item {
+    text-align: center;
+    padding: 15px;
+}
+.team-slider-item__img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.team-slider-item__name {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 0 5px 0;
+}
+.team-slider-item__name-desk {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Light';
+}
+.team-slider-item__desk {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #fff;
+    padding-top: 20px;
+    line-height: 1.4;
+}
+.td-carousel-dot {
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    transition: all 0.5s;
+}
+.td-carousel-dot.active, .td-carousel-dot:hover {
+    background: #fcac45;
+}
+.td-carousel-dots {
+    margin-top: 15px;
 }
 @media (min-width: 981px) {
     .nav.scroll {
