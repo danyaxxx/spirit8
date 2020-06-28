@@ -41,6 +41,14 @@ ul, li {
     width: 50px;
     opacity: 0.6;
 }
+.title-section-desc {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: italic;
+    color: #636363;
+    line-height: 1.2;
+}
 .header {
     width: 100%;
     background-color: #333;
@@ -233,23 +241,6 @@ ul, li {
     background: #636363;
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .team {
     background: #333;
 }
@@ -297,6 +288,40 @@ ul, li {
 }
 .td-carousel-dots {
     margin-top: 15px;
+}
+.services-items {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+.services-item {
+    flex-basis: 25%;
+    text-align: center;
+    padding: 0 14px 14px 14px;
+}
+.services-item_img {
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    border: 6px solid #fcac45;
+    display: inline-block;
+    line-height: 114px;
+}
+.services-item_img img {
+    vertical-align: middle;
+}
+.services-item_title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: "Roboto Bold", sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+.services-item_desc {
+    font-size: 14px;
+    line-height: 1.4;
 }
 @media (min-width: 981px) {
     .nav.scroll {
@@ -414,6 +439,12 @@ ul, li {
     .about__img img {
         position: static;
     }
+    .services-items {
+        flex-wrap: wrap;
+    }
+    .services-item {
+        flex-basis: 50%;
+    }
 }
 @media (max-width: 480px) {
     .home__title {
@@ -430,5 +461,11 @@ ul, li {
     }
     .about-list li {
         font-size: 16px;
+    }
+    .services-items {
+        justify-content: center;
+    }
+    .services-item {
+        flex-basis: 80%;
     }
 }
