@@ -12,6 +12,10 @@ a {
 ul, li {
     list-style: none;
 }
+img {
+    vertical-align: middle;
+    border: 0;
+}
 .container {
     width: 100%;
     max-width: 1200px;
@@ -322,6 +326,15 @@ ul, li {
 .services-item_desc {
     font-size: 14px;
     line-height: 1.4;
+}
+.clients {
+    background: #333;
+}
+.clients img {
+    display: inline-block;
+}
+.clients-slider-item {
+    text-align: center;
 }
 @media (min-width: 981px) {
     .nav.scroll {

@@ -34,7 +34,7 @@ document.querySelector('.nav-items').addEventListener('click', function(e) {
     }
 });
 
-let g = TDC('#team-slider', {
+let team_slider = TDC('#team-slider', {
     items: 4,
     nav: false,
     loop: true,
@@ -48,6 +48,24 @@ let g = TDC('#team-slider', {
         },
         1000: {
             items:4
+        }
+    }
+});
+
+let clients_slider = TDC('#clients-slider', {
+    items: 5,
+    nav: false,
+    loop: true,
+    dots: true,
+    responsive: {
+        0: {
+            items:1
+        },
+        600: {
+            items:3
+        },
+        1000: {
+            items:5
         }
     }
 });
