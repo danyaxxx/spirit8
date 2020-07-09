@@ -69,3 +69,39 @@ let clients_slider = TDC('#clients-slider', {
         }
     }
 });
+
+let work_fl = document.getElementById('filter');
+let work_items = document.querySelectorAll("#portfolio .portfolio-item");
+
+work_fl.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (e.target.classList.contains('portfolio_fl-item')) {
+        let category = e.target.dataset.filter;
+        if (category === "") {
+            for (var i = 0; i < work_items.length; i++) {
+                work_items[i].style.display = 'block';
+            }
+        } else if (category) {
+            for (var i = 0; i < work_items.length; i++) {
+                let fl_tags = work_items[i].dataset.tags.split(" ");
+                if (fl_tags) {
+                    if (fl_tags.length > 1) {
+                        for (var j = 0; j < fl_tags.length; j++) {
+                            if (fl_tags[j] === category) {
+                                work_items[i].style.display = 'block';
+                            } else {
+                                work_items[i].style.display = 'none';
+                            }
+                        }
+                    } else {
+                        if (fl_tags[0] === category) {
+                                work_items[i].style.display = 'block';
+                            } else {
+                                work_items[i].style.display = 'none';
+                            }
+                    }
+                }
+            }
+        }
+    }
+});
