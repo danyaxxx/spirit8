@@ -342,17 +342,6 @@ img {
 .clients-slider-item {
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
 .portfolio_fl {
     display: -webkit-flex;
     display: -moz-flex;
@@ -458,6 +447,34 @@ img {
 .portfolio-item-d img {
     width: 40px;
     height: 40px;
+}
+.testimonials {
+    background: #333;
+}
+.testimonials-slider {
+    width: 100%;
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-top: 30px;
+    color: #eeeef0;
+}
+.t-s-i-content {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.2;
+}
+.t-s-i-desc {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0;
+    color: #999999;
+}
+.t-s-i-desc span {
+    color: #eeeef0;
+    font-weight: bold;
 }
 @media (min-width: 981px) {
     .nav.scroll {

@@ -105,3 +105,10 @@ work_fl.addEventListener('click', function(e) {
         }
     }
 });
+
+let testimonials_slider = TDC('#testimonials-slider', {
+    items: 1,
+    nav: false,
+    loop: true,
+    dots: true
+});
