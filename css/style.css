@@ -23,8 +23,8 @@ img {
     padding: 0 20px;
 }
 .p-tb {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
 }
 .text-white {
     color: #fff !important;
@@ -452,8 +452,7 @@ img {
     background: #333;
 }
 .testimonials-slider {
-    width: 100%;
-    max-width: 767px;
+    width: 66.6666666%;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -475,6 +474,60 @@ img {
 .t-s-i-desc span {
     color: #eeeef0;
     font-weight: bold;
+}
+.contacts.container {
+    width: 66.6666666%;
+}
+.contacts-t {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-name, .contacts-email {
+    width: 100%;
+}
+.contacts-name {
+    margin-right: 30px;
+}
+.contacts-f span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.contacts-f span sub {
+    color: #ff0000;
+}
+.contacts-f input, .contacts-f textarea {
+    width: 100%;
+    border: 1px solid #999999;
+    background: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: 0;
+}
+.contacts-f input:hover, .contacts-f textarea:hover {
+    box-shadow: 0px 1px 2.98px 4.02px rgba(252, 172, 69, 0.5);
+}
+.contacts-f textarea {
+    height: 165px;
+}
+.contacts-f button {
+    background: #fcac45;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 40px;
+    border-radius: 0;
+    border: 0;
+    float: right;
+    font-size: 16px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+.contacts-f button:hover {
+    background: #333;
 }
 @media (min-width: 981px) {
     .nav.scroll {
@@ -605,6 +658,15 @@ img {
     .portfolio-item {
         flex-basis: 48%;
     }
+    .contacts.container {
+        width: 80%;
+    }
+    .contacts-name {
+        margin: 0;
+    }
+    .contacts-t {
+        display: block;
+    }
 }
 @media (max-width: 479px) {
     .home__title {
@@ -630,5 +692,8 @@ img {
     }
     .portfolio-item {
         flex-basis: 80%;
+    }
+    .contacts.container {
+        width: 100%;
     }
 }
