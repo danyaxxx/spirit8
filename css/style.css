@@ -529,6 +529,39 @@ img {
 .contacts-f button:hover {
     background: #333;
 }
+.footer {
+    background: #333;
+    padding: 20px 0;
+}
+.footer-i {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright {
+    text-transform: uppercase;
+    color: #b2b2b2;
+    font-size: 12px;
+}
+.social {
+    font-size: 0;
+}
+.social a {
+    display: inline-block;
+    font-size: 0;
+    margin-right: 4px;
+}
+.social a:last-child {
+    margin-right: 0;
+}
+.social img {
+    width: 31px;
+    height: 31px;
+}
 @media (min-width: 981px) {
     .nav.scroll {
         background: #222;
@@ -666,6 +699,12 @@ img {
     }
     .contacts-t {
         display: block;
+    }
+    .footer-i {
+        flex-direction: column;
+    }
+    .copyright {
+        margin-bottom: 15px;
     }
 }
 @media (max-width: 479px) {

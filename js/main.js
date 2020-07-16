@@ -71,12 +71,27 @@ let clients_slider = TDC('#clients-slider', {
 });
 
 let work_fl = document.getElementById('filter');
+let work_fl_items = work_fl.querySelectorAll('.portfolio_fl-item');
 let work_items = document.querySelectorAll("#portfolio .portfolio-item");
+let wort_active_t = undefined;
 
 work_fl.addEventListener('click', function(e) {
     e.preventDefault();
     if (e.target.classList.contains('portfolio_fl-item')) {
+        if (wort_active_t === undefined) {
+            wort_active_t = e.target;
+        } else if (wort_active_t === e.target) {
+            return false;
+        }
+        wort_active_t = e.target;
         let category = e.target.dataset.filter;
+        for (var i = 0; i < work_fl_items.length; i++) {
+            if (work_fl_items[i] === e.target) {
+                work_fl_items[i].classList.add('active');
+            } else {
+                work_fl_items[i].classList.remove('active');
+            }
+        }
         if (category === "") {
             for (var i = 0; i < work_items.length; i++) {
                 work_items[i].style.display = 'block';
